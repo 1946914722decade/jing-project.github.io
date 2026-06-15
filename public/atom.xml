@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jing&#39;s Blog</title>
+  
+  
+  <link href="https://1946914722decade.github.io/jing-project.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://1946914722decade.github.io/jing-project.github.io/"/>
+  <updated>2026-06-15T04:59:29.852Z</updated>
+  <id>https://1946914722decade.github.io/jing-project.github.io/</id>
+  
+  <author>
+    <name>Jing</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Hexo+Anzhiyu搭建个人博客</title>
+    <link href="https://1946914722decade.github.io/jing-project.github.io/2026/06/15/hexo-blog-setup/"/>
+    <id>https://1946914722decade.github.io/jing-project.github.io/2026/06/15/hexo-blog-setup/</id>
+    <published>2026-06-15T05:00:00.000Z</published>
+    <updated>2026-06-15T04:59:29.852Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文记录了使用 Hexo + Anzhiyu 主题搭建个人博客并部署到 GitHub Pages 的全过程。</p><span id="more"></span><h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>Hexo 需要 Node.js 环境，推荐使用 v20 或更高版本。</p><h3 id="安装-Hexo-CLI"><a href="#安装-Hexo-CLI" class="headerlink" title="安装 Hexo CLI"></a>安装 Hexo CLI</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><h2 id="安装-Anzhiyu-主题"><a href="#安装-Anzhiyu-主题" class="headerlink" title="安装 Anzhiyu 主题"></a>安装 Anzhiyu 主题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git anzhiyu</span><br></pre></td></tr></table></figure><p>在根目录 <code>_config.yml</code> 中修改主题配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">anzhiyu</span></span><br></pre></td></tr></table></figure><h2 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h2><h3 id="1-创建-GitHub-仓库"><a href="#1-创建-GitHub-仓库" class="headerlink" title="1. 创建 GitHub 仓库"></a>1. 创建 GitHub 仓库</h3><p>仓库名格式：<code>username.github.io</code></p><h3 id="2-安装部署插件"><a href="#2-安装部署插件" class="headerlink" title="2. 安装部署插件"></a>2. 安装部署插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h3 id="3-配置部署信息"><a href="#3-配置部署信息" class="headerlink" title="3. 配置部署信息"></a>3. 配置部署信息</h3><p>在 <code>_config.yml</code> 中添加：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/username/username.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure><h3 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><h2 id="日常写作流程"><a href="#日常写作流程" class="headerlink" title="日常写作流程"></a>日常写作流程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"><span class="comment"># 编辑 source/_posts/文章标题.md</span></span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo + Anzhiyu 是一个非常优秀的博客组合，Anzhiyu 主题功能丰富且美观，非常适合个人博客使用。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文记录了使用 Hexo + Anzhiyu 主题搭建个人博客并部署到 GitHub Pages 的全过程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://1946914722decade.github.io/jing-project.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Hexo" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/Hexo/"/>
+    
+    <category term="Anzhiyu" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/Anzhiyu/"/>
+    
+    <category term="GitHub Pages" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/GitHub-Pages/"/>
+    
+    <category term="教程" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎来到我的博客</title>
+    <link href="https://1946914722decade.github.io/jing-project.github.io/2026/06/15/hello-world/"/>
+    <id>https://1946914722decade.github.io/jing-project.github.io/2026/06/15/hello-world/</id>
+    <published>2026-06-15T04:00:00.000Z</published>
+    <updated>2026-06-15T04:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="博客开张"><a href="#博客开张" class="headerlink" title="博客开张"></a>博客开张</h2><p>欢迎来到我的个人博客！这是我的第一篇文章。</p><p>本博客使用 <a href="https://hexo.io/">Hexo</a> 框架搭建，采用 <a href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">Anzhiyu</a> 主题，部署在 GitHub Pages 上。</p><span id="more"></span><h2 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h2><p>这个博客主要用于：</p><ol><li><strong>技术笔记</strong> - 记录学习和工作中的技术心得</li><li><strong>项目分享</strong> - 分享一些个人项目和实践经验</li><li><strong>生活随笔</strong> - 记录生活中的点滴感悟</li></ol><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul><li><strong>框架</strong>: Hexo</li><li><strong>主题</strong>: Anzhiyu</li><li><strong>部署</strong>: GitHub Pages</li><li><strong>写作</strong>: Markdown</li></ul><h2 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h2><ul><li><input disabled="" type="checkbox"> 持续更新技术文章</li><li><input disabled="" type="checkbox"> 完善关于页面</li><li><input disabled="" type="checkbox"> 添加更多功能</li></ul><p>感谢你的访问，希望这里的内容能对你有所帮助！</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;博客开张&quot;&gt;&lt;a href=&quot;#博客开张&quot; class=&quot;headerlink&quot; title=&quot;博客开张&quot;&gt;&lt;/a&gt;博客开张&lt;/h2&gt;&lt;p&gt;欢迎来到我的个人博客！这是我的第一篇文章。&lt;/p&gt;
+&lt;p&gt;本博客使用 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; 框架搭建，采用 &lt;a href=&quot;https://github.com/anzhiyu-c/hexo-theme-anzhiyu&quot;&gt;Anzhiyu&lt;/a&gt; 主题，部署在 GitHub Pages 上。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://1946914722decade.github.io/jing-project.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="博客" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/Hexo/"/>
+    
+    <category term="随笔" scheme="https://1946914722decade.github.io/jing-project.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
