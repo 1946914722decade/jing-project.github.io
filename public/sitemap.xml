@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://jing602725.github.io/jing-project.github.io/tags/index.html</loc>
+    <loc>https://jing602725.github.io/jing-project.github.io/categories/index.html</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://jing602725.github.io/jing-project.github.io/categories/index.html</loc>
+    <loc>https://jing602725.github.io/jing-project.github.io/tags/index.html</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -65,21 +65,7 @@
 
   
   <url>
-    <loc>https://jing602725.github.io/jing-project.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://jing602725.github.io/jing-project.github.io/tags/Hexo/</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jing602725.github.io/jing-project.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -106,17 +92,31 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://jing602725.github.io/jing-project.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://jing602725.github.io/jing-project.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
+    <loc>https://jing602725.github.io/jing-project.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>https://jing602725.github.io/jing-project.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jing602725.github.io/jing-project.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
